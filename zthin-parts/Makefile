@@ -968,7 +968,7 @@ iucvclient.o : $(SRC_DIR)/IUCV/iucvclient.c
 # Libraries
 #-----------------------------------------------------------------------
 $(ZTHINLIB) : $(SM_OBJECTS) $(UTILS_OBJECTS) $(VMAPI_OBJECTS)
-	gcc -Wl,-d -shared -pthread -ldl -o $(ZTHINLIB) $(SM_OBJECTS) $(UTILS_OBJECTS) $(VMAPI_OBJECTS)
+	gcc -Wl,-d -shared -pthread -ldl -ltirpc -o $(ZTHINLIB) $(SM_OBJECTS) $(UTILS_OBJECTS) $(VMAPI_OBJECTS)
 
 #-----------------------------------------------------------------------
 # Executables

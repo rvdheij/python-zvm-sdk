@@ -34,6 +34,7 @@
 #include <sys/ipc.h>
 #include <sys/msg.h>
 #include <sys/stat.h>
+#include <rpc/rpc.h>
 #include <stdbool.h>
 #include "vmapiQuery.h"
 #include "smPublic.h"

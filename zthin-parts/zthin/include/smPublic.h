@@ -445,5 +445,9 @@ int vmbkendRemoveCachedScanFiles(struct _vmApiInternalContext* vmapiContextP, ch
 void vmbkendRemoveEntireCache(struct _vmApiInternalContext* vmapiContextP, char *cachePathP);
 void waitForPendingWorkunits(struct _vmApiInternalContext* vmapiContextP, int waitIntervalInSeconds);  // 0 = wait forever
 int cacheFileValid(struct _vmApiInternalContext* vmapiContextP, const char* cFName);
+void logLine(struct _vmApiInternalContext* vmapiContextP, char aSeverity, const char* aLineP);
+void errorLine(struct _vmApiInternalContext* vmapiContextP, const char* aLineP);
+void errorLog(struct _vmApiInternalContext* vmapiContextP, const char * functionName, const char * lineNumber, int aRc,
+        int aReason, const char* aLineP);
 
 #endif

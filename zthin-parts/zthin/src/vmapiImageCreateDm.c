@@ -14,6 +14,7 @@
  * limitations under the License.
  */
 #include "smSocket.h"
+#include "smPublic.h"
 #include "vmapiImage.h"
 #include "smapiTableParser.h"
 #include <stdlib.h>
